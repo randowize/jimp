@@ -143,7 +143,7 @@ declare namespace Jimp {
         loadFont(file: string, cb?: Jimp.ImageCallback): Promise<any>;
 
         rgbaToInt(r: number, g: number, b: number, a: number, cb?: (err: Error, i: number)=>any): number;
-        intToRGBA(i: number, cb?: (err:Error, rgba: Jimp.RGBA)=>any): Jimp.RGBA;
+        intToRgba(i: number, cb?: (err:Error, rgba: Jimp.RGBA)=>any): Jimp.RGBA;
         limit255(n: number): number;
         diff(img1: Jimp, img2: Jimp, threshold?: number): {percent: number, diff: Jimp};
         distance(img1: Jimp, img2: Jimp): number;
